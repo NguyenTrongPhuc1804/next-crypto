@@ -10,19 +10,24 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { SELECT_THEME } from "@/constants";
-import ToggleSideBar from "../common/ToggleSideBar";
 
 const Header = () => {
   return (
-    <div className="bg-third  shrink-0   top-0 right-0 h-[6rem] w-full flex justify-between items-center lg:px-10 px-3">
+    <div className="bg-third fixed top-0 right-0 left-[200px] h-[6rem]  flex justify-between items-center px-10">
       <div className="flex items-center gap-4">
-        <ToggleSideBar />
-
+        <Button variant="link" className="cursor-pointer">
+          <Image
+            src={"/assets/icons/Mega-Menue.png"}
+            width={24}
+            height={24}
+            alt="icons"
+          />
+        </Button>
         <InputSearch />
       </div>
       <div className="flex items-center">
         <Select defaultValue="english">
-          <SelectTrigger className="w-[140px] cursor-pointer text-white border-none bg-primary lg:py-6 py-4 lg:text-base text-xs">
+          <SelectTrigger className="w-[140px] cursor-pointer text-white border-none bg-primary py-6">
             <SelectValue placeholder="Theme" />
           </SelectTrigger>
           <SelectContent className="bg-primary">
@@ -38,8 +43,8 @@ const Header = () => {
             ))}
           </SelectContent>
         </Select>
-        <div className="ml-2 lg:block hidden ">
-          <Button className=" mr-2 bg-primary rounded-2xl px-5 py-6 cursor-pointer text-white  ">
+        <div className="ml-2">
+          <Button className="mr-2 bg-primary rounded-2xl px-5 py-6 cursor-pointer text-white  ">
             <Image
               src={"/assets/icons/Wallet-Icon.png"}
               width={24}
@@ -67,16 +72,12 @@ const Header = () => {
             </div>
           </Button>
         </div>
-        <div className="ml-2 lg:hidden block ">
-          <Button className="mr-2 bg-primary rounded-xl lg:px-5 lg:py-6 px-4 py-5 cursor-pointer text-white  ">
-            <Image
-              src={"/assets/icons/Settings-Icon.png"}
-              width={20}
-              height={20}
-              alt="icons"
-            />
-          </Button>
-        </div>
+      </div>
+
+      <div className="absolute left-[-1.5rem]">
+        <Button className="rounded-full bg-primary px-5 py-6 cursor-pointer text-white  ">
+          {"<"}
+        </Button>
       </div>
     </div>
   );

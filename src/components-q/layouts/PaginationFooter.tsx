@@ -5,12 +5,12 @@ import Image from "next/image";
 
 const PaginationFooter = () => {
   return (
-    <div className="pagination md:flex flex-none justify-between">
+    <div className="pagination flex justify-between">
       <div className="">
         <PaginationShad />
       </div>
 
-      <div className="text-white md:block hidden">
+      <div className="text-white ">
         <Button className="text-sm text-white">
           <div className=" border-2 border-gray-700 rounded-lg">
             <svg
@@ -30,7 +30,7 @@ const PaginationFooter = () => {
         </Button>
       </div>
 
-      <div className="flex items-center gap-2 md:block hidden">
+      <div className="flex items-center gap-2">
         <Image
           src="/assets/icons/Load-Icon.png"
           width={24}

@@ -9,7 +9,7 @@ import React from "react";
 
 const Page = () => {
   return (
-    <div className="grid lg:grid-cols-7 grid-rows-10 gap-4 my-5">
+    <div className="grid grid-cols-7 grid-rows-10 gap-4 my-5">
       <div className="col-span-3 row-span-10">
         <span className="">Store Of Value</span>
         <TooltipProvider>

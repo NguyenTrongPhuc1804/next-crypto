@@ -2,7 +2,7 @@ import React from "react";
 
 const InputSearch = () => {
   return (
-    <form className="max-w-md lg:block  hidden w-[400px] mx-auto">
+    <form className="max-w-md w-[400px] mx-auto">
       <label
         htmlFor="default-search"
         className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"

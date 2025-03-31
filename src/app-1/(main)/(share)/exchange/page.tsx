@@ -5,7 +5,7 @@ import CryptoTable from "@/components/common/CryptoTable";
 const Page = async () => {
   return (
     <>
-      <div className="md:mt-6 mt-2">
+      <div className="table w-full mt-6">
         <CryptoTable />
       </div>
     </>

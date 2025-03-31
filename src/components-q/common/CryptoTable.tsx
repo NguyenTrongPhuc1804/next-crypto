@@ -165,7 +165,7 @@ const titleTable: ITitleTable[] = [
 
 const CryptoTable = () => {
   return (
-    <div className="overflow-x-auto w-full">
+    <div className="overflow-x-auto">
       <table className="min-w-full">
         <thead>
           <tr className="text-left text-sm border-b border-gray-700">
